@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updatePreview() {
         const parameter = input.value || '[THIS IS THE VARIABLE]';
-        const baseUrl = 'https://vidsrc.me/embed/movie?imdb=';
+        const baseUrl = 'https://vidsrc.net/embed/movie?imdb=';
         const fullUrl = baseUrl + parameter;
         previewText.textContent = 'Current embed: ' + fullUrl;
     }
 
     function updateEmbed() {
         const parameter = input.value || '[THIS IS THE VARIABLE]';
-        const baseUrl = 'https://vidsrc.me/embed/movie?imdb=';
+        const baseUrl = 'https://vidsrc.net/embed/movie?imdb=';
         iframe.src = baseUrl + parameter;
     }
 
